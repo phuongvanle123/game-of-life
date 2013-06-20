@@ -26,7 +26,7 @@ public enum Cell {
     }
 
     public String getSymbol() {
-        //return symbol;
-		return "abc";
+        return symbol;
+		//return "abc";
     }
 }
