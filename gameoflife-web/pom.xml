@@ -17,6 +17,17 @@
     </properties>
 
     <build>
+								<plugin>
+                                    <groupId>org.codehaus.mojo</groupId>
+                                    <artifactId>cobertura-maven-plugin</artifactId>
+                                    <version>${cobertura.version}</version>
+                                    <configuration>
+                                        <formats>
+                                            <format>html</format>
+                                            <format>xml</format>
+                                        </formats>
+                                    </configuration>
+                                </plugin>
         <finalName>gameoflife</finalName>
         <resources>
             <resource>
