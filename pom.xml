@@ -27,6 +27,16 @@
     </scm>
     <build>
         <plugins>
+		<!--add them-->
+			<plugin>
+				<groupId>com.atlassian.maven.plugins</groupId>
+				<artifactId>maven-clover2-plugin</artifactId>
+				<version>3.0.4</version>
+				<configuration>
+				<includesTestSourceRoots>false</includesTestSourceRoots>
+				<generateXml>true</generateXml>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
@@ -38,6 +48,7 @@
 				</formats>
 				</configuration>
 			</plugin>
+			<!--end-->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
